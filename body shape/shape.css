@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(233, 233, 196);
+}
+h1{
+  
+    color:rgb(180, 140, 88); 
+font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin-top: 30px;
+ 
+    margin-left: 500px;
+}
+
+.first{
+    display: inline-flex;
+}
+.first p{
+padding: 10px;
+margin: 20px;
+font-size: 25px;
+color: rgb(27, 24, 24);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.first img{
+    margin: 20px;
+    height: 300px;
+    width: 500px;
+}
+@media (max-width: 900px) {
+    .first {
+      display: block;
+      /* additional styles for block layout */
+    }
+    .first p{
+        padding: 0px;
+        margin: 10px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .first img{
+        margin: auto;
+        width: 400px;
+       
+    }
+    h1{
+        margin-left:70px;
+    }
+
+  }
+  .fits{
+display: inline-flex;
+justify-content: space-between;
+  }
+ul{
+   font-size: 20px;
+   justify-content: space-between;
+  
+  }
+  .transition-list h3{
+    font-size: 37px;
+    margin: 10px;
+    margin-left: 190px;
+    color: rgb(180, 140, 88);
+  }
+  .transition-lists h3{
+    font-size: 37px;
+    margin: 10px;
+    margin-left: 200px;
+    color: rgb(180, 140, 88);
+  }
+  .transition-list li {
+    margin: 20px;
+    margin-left: 220px;
+    opacity: 0;  /* Start hidden */
+    transform: translateY(20px);  /* Start slightly below */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;  /* Apply transitions */
+}
+
+/* Apply delay to each list item */
+.transition-list li:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.transition-list li:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.transition-list li:nth-child(3) {
+    transition-delay: 0.5s;
+}
+
+.transition-list li:nth-child(4) {
+    transition-delay: 0.7s;
+}
+
+/* Trigger the transition by adding a class */
+.transition-list.appear li {
+    opacity: 1;  /* Make visible */
+    transform: translateY(0);  /* Move to original position */
+}
+.transition-lists li {
+    margin: 20px;
+    margin-left: 230px;
+    opacity: 0;  /* Start hidden */
+    transform: translateY(20px);  /* Start slightly below */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;  /* Apply transitions */
+}
+
+/* Apply delay to each list item */
+.transition-lists li:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.transition-lists li:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.transition-lists li:nth-child(3) {
+    transition-delay: 0.5s;
+}
+
+.transition-lists li:nth-child(4) {
+    transition-delay: 0.7s;
+}
+
+/* Trigger the transition by adding a class */
+.transition-lists.appears li {
+    opacity: 1;  /* Make visible */
+    transform: translateY(0);  /* Move to original position */
+}
+@media (max-width: 900px) {
+    .transition-list h3{
+margin-left: 20px;
+font-size: 20px;
+    }
+    .transition-list li{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+    .transition-lists h3{
+        margin-left: 20px;
+        font-size: 20px;
+            }
+            .transition-lists li{
+                margin-left: 30px;
+                font-size: 20px;
+            }
+}
+h2{
+    color: rgb(180, 140, 88);
+    font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 500px;  
+}
+.last img{
+    display: flex;
+margin: 20px;
+margin-left: 300px;
+width: 600px;
+height: 420px;
+}
+@media (max-width:900px){
+    h2{
+        margin-top: 10px;
+    font-size: 20px;
+    margin-left: 100px;
+
+    }
+    .last img{
+        display: block;
+        width: 300px;
+        height: 300px;
+        margin-left: 50px;
+    }
+}
